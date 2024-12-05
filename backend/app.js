@@ -18,7 +18,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('view engine','ejs');
 
-app.use('/',rootPage)
+// app.use('/',rootPage)
+app.use('/',(req,res)=>{
+    res.send("Home Page")
+})
 
 app.use('/vehicle',a1);
 app.use('/member',member);
