@@ -18,7 +18,7 @@ export default function MemberData()
     }
     function loadData()
     {
-        axios.get("http://localhost:4000/member").then(reply=>{
+        axios.get(process.env.REACT_APP_API+"member").then(reply=>{
             setMembers(reply.data);
             showPage();
         });

@@ -15,7 +15,7 @@ export default function ForgotPass(){
         }
 
         let obj={email:a1,upass:a2};
-        axios.post("http://localhost:4000/member/update?opr=U",obj).then(reply=>{
+        axios.post(process.env.REACT_APP_API+"member/update?opr=U",obj).then(reply=>{
             if(reply.status==200 )
             {
                 alert("Password Updated Successfully");

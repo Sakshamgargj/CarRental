@@ -17,7 +17,7 @@ export default function UpdateCar() {
         let a10 = document.getElementById("AC10");
         let obj = {vid:a0.value,name:a1.value,rent:a2.value,model:a3.value,mark:a4.value,year:a5.value,doors:a6.value,ac:a7.value,transmission:a8.value,fuel:a9.value,photo:a10.value}
         console.log(obj.vid+" , " +obj.name)
-        axios.post("http://localhost:4000/vehicle/update?opr=U",obj).then((reply)=>{
+        axios.post(process.env.REACT_APP_API+"vehicle/update?opr=U",obj).then((reply)=>{
             if(reply.status === 200)
                 {
                     alert("Added Successfully")

@@ -81,7 +81,7 @@ function Register()
         }
         let obj={email:s1,upass:s2,fname:s4,lname:s5,mobile:s6,country:s7,state:s8,city:s9,pincode:s10};
         // let json=JSON.stringify(obj);
-        axios.post("http://localhost:4000/member",obj).then(reply=>{
+        axios.post(process.env.REACT_APP_API+"member",obj).then(reply=>{
             if(reply.status==200 && reply.data.status=="OK")
             {
                 alert("Registered Successfully");

@@ -1,4 +1,4 @@
 const root = (req,res)=>{
-    res.render("root")
+    res.get("HOME PAGE")
 }
 export {root}

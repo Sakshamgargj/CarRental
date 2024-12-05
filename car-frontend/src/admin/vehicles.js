@@ -10,7 +10,7 @@ const Vehicles = () => {
 
     function f1(vid){
         let obj = {vid};
-        axios.post("http://localhost:4000/vehicle/delete",obj).then((reply)=>{
+        axios.post(process.env.REACT_APP_API+"vehicle/delete",obj).then((reply)=>{
             if(reply.status === 200){
                 nav('/admin')
                 alert("Vehicle Deleted :) ")
@@ -21,7 +21,7 @@ const Vehicles = () => {
 
     function loadProducts()
     {
-        axios.get("http://localhost:4000/vehicle").then(reply=>{
+        axios.get(process.env.REACT_APP_API+"vehicle").then(reply=>{
             if(reply.status==200)
             {
                     setVehicle(reply.data);

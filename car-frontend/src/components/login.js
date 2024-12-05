@@ -16,7 +16,7 @@ function Login({commonData,setLogin,setProfile})
         let s1=document.getElementById("Lt1").value;
         let s2=document.getElementById("Lt2").value;    
         
-        axios.get("http://localhost:4000/member/"+"login?email="+s1+"&upass="+s2).then(reply=>{
+        axios.get(process.env.REACT_APP_API+"member/"+"login?email="+s1+"&upass="+s2).then(reply=>{
             if(reply.status==200)
             {
                 if(reply.data.status==undefined)

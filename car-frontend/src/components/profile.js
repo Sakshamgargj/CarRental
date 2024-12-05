@@ -28,7 +28,7 @@ function Profile({commonData,setBgColor,setColor})
                 <div className="col-6">
                     <h1 className="m-1 p-5 " ><b>Profile Page</b></h1>
                     <h5>Dark Mode : <input type="button" value="Enable  /" onClick={f1} id="pfid1" style={{ borderRadius:'0px', cursor:"pointer", border:"0px"}} /><input type="button" value="Disable" onClick={f2} id="pfid1" style={{ borderRadius:'0px', cursor:"pointer", border:"0px"}} /></h5>
-                    <h5>Dark Mode : <button  onClick={f3} id="pfid3" style={{ borderRadius:'0px', cursor:"pointer", borderRadius:"30px"}} >Enable</button></h5>
+                    {/* <h5>Dark Mode : <button  onClick={f3} id="pfid3" style={{ borderRadius:'0px', cursor:"pointer", borderRadius:"30px"}} >Enable</button></h5> */}
                     <table className="table table-bordered table-striped text-center ">
                         <tbody>
                             <tr><td>Email</td><td>{commonData.profile.email}</td></tr>

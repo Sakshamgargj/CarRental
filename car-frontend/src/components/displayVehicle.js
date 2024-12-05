@@ -10,7 +10,7 @@ const DisplayVehicle = () => {
 
     function loadProducts()
     {
-        axios.get("http://localhost:4000/vehicle").then(reply=>{
+        axios.get(process.env.REACT_APP_API+"vehicle").then(reply=>{
             if(reply.status==200)
             {
                     setVehicle(reply.data);

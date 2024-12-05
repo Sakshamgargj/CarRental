@@ -5,7 +5,7 @@ import '../App.css'
 export default function Orders () {
     let [order,setOrder] = useState([]);
     function f1(){
-        axios.get("http://localhost:4000/order").then((reply)=>{
+        axios.get(process.env.REACT_APP_API+"order").then((reply)=>{
             if(reply.status === 200){
                 setOrder(reply.data)
             }

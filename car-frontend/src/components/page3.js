@@ -43,7 +43,7 @@ function Page3 ({commonData}){
       pickupDate : a4,
       dropoffDate : a5
     }
-    axios.post("http://localhost:4000/order",obj).then((reply)=>{
+    axios.post(process.env.REACT_APP_API+"order",obj).then((reply)=>{
         if(reply.status === 200)
         {
           alert("Order Booked")
@@ -56,7 +56,7 @@ function Page3 ({commonData}){
 
   
   useEffect(()=>{
-    axios.get('http://localhost:4000/vehicle').then(reply=>{
+    axios.get(process.env.REACT_APP_API+"vehicle").then(reply=>{
       if(reply.status === 200){
         setCarName(reply.data);
       }
