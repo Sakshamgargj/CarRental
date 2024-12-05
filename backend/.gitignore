@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Dependency directories
+jspm_packages/
+
+# build output
+/dist
+/build
+
+# NPM package-lock files (if using yarn, you can ignore yarn.lock instead)
+package-lock.json
+yarn.lock
+
+# MacOS file system files
+.DS_Store
+
+# IDE/Editor files
+.vscode/
+.idea/
+
+# Test coverage reports
+coverage/
+
+# Operating system files
+Thumbs.db
+ehthumbs.db

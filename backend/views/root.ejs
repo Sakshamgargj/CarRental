@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 20px;">
+    <h1>Backend Api..</h1>
+    <hr>
+    <h3>VEHICLE</h3>
+    <hr/>
+    <div>Vehicles - (vid,name,rent,model,mark,year,doors,ac,transmission,fuel,photo) GET, POST</div>
+    <hr/>
+    <div>GET all records: http://localhost:4000/vehicle </div>
+    <hr/>
+    <div>GET Create records: http://localhost:4000/vehicle/create </div>
+    <hr>
+    <div>GET 1 record: http://localhost:4000/vehicle/:record</div>
+    <hr>
+    <div>POST(To Add Data) :  http://localhost:4000/vehicle
+        <div>Request: {"vid":1,"name":"Audi","rent":45,"model":"Audi","mark":"A1","year":2022,"doors":"4/5","ac":"Yes","transmission":"Manual","fuel":"Hybrid","photo":"http://localhost:8080/file/1716175602857-any-name-audi.png" }</div>
+        <div>Response: {"status":"OK"} or {"status":"Error"}</div>
+    </div>
+    <hr>
+    <div>
+        POST(To Update Data) :  http://localhost:4000/vehicle/update?opr=U
+        <div>Request: {"vid":1,"name":"Audi","rent":45,"model":"Audi","mark":"A1","year":2022,"doors":"4/5","ac":"Yes","transmission":"Manual","fuel":"Hybrid","photo":"http://localhost:8080/file/1716175602857-any-name-audi.png" }</div>
+        <div>Response: {"status":"OK"} or {"status":"Error"}</div>
+    </div>
+    <hr>
+    <div>
+        POST(To Delete Data) : http://localhost:4000/vehicle/delete
+        <div>Response: {"status":"OK"} or {"status":"Error"}</div>
+    </div>
+    <hr>
+    <div>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+    <hr>
+    <div>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+    <hr>
+    <h3>MEMBER </h3>
+    <hr>
+    <div>Member - (email,upass,fname,lname,mobile,country,state,city,pincode) GET, POST</div>
+    <hr/>
+    <div>GET all records: http://localhost:4000/member </div>
+    <hr>
+    <div>GET 1 record: http://localhost:4000/member/login?email=demo@demo.in&upass=demo@12</div>
+    <hr>
+    <div>POST : http://localhost:4000/member 
+        <div>Request: {"email": "demo2@demo.in","upass": "demo@12","fname": "demo","lname": "demo","mobile": "74747744","country": "BD","state": "Bagerhat District","city": "efw","pincode": "3"}
+          </div>
+        <div>Response: {"status":"OK"} or {"status":"Error"}</div>
+    </div>
+    <hr>
+    <div>
+        POST(To Update Data) :  http://localhost:4000/member/update?opr=U
+        <div>Request: {"email": "demo2@demo.in","upass": "demo@12"}
+        <div>Response: {"status":"OK"} or {"status":"Error"}</div>
+    </div>
+    <hr>
+    <div>
+        POST(To Delete Data) :  --API Pending--
+        <div>Response: {"status":"OK"} or {"status":"Error"}</div>
+    </div>
+    <hr>
+    <div>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+    <hr>
+    <div>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+    <hr>
+    <h3>ADMIN PANEL</h3>
+    <hr/>
+    <div>GET All ORDER record : http://localhost:4000/order </div>
+    <hr/>
+    <div>POST  ORDER : http://localhost:4000/order </div>
+    <hr>
+    <div>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+    <hr>
+    <div>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+    <hr>
+    <h3>COUNTRY</h3>
+    <hr/>
+    <div>GET All Country record : http://localhost:4000/country </div>
+    <hr/>
+    <div>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+    <hr>
+</body>
+</html>
