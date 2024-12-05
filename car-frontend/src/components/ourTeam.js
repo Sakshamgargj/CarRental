@@ -7,7 +7,7 @@ import Footer from './footer'
 const OurTeam = () => {
   return (
     <div>
-        <Header/>
+        {/* <Header/> */}
         <h1 align='center'>OWNER</h1>
         <div className='row p-5'>
             <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-xs-6 p-3">

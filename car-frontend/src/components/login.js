@@ -46,7 +46,7 @@ function Login({commonData,setLogin,setProfile})
     },[])
     return(
         <div >
-            <Header/>
+            {/* <Header/> */}
             <div className="row pt-5 ">
             <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-1"></div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-10">

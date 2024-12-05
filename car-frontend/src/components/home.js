@@ -12,7 +12,7 @@ function Home({commonData})
     
     return(
         <div  style={{backgroundColor:commonData.bgColorMode, color:commonData.colorMode}} >
-            <Header/>
+            {/* <Header/> */}
             {/* Page1 */}
             <Page1/>
            

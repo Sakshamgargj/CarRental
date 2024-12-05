@@ -22,7 +22,7 @@ import CarShow from './components/carShow';
 function App() {
   return (
     <div>
-      {/* {document.URL.endsWith('admin')?"":<Header/>} */}
+      {document.URL.endsWith('admin')?"":<Header/>}
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/admin' element={<Admin/>} />

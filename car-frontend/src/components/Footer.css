@@ -1,0 +1,132 @@
+/* General Footer Styling */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 50px 20px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 1s ease-out;
+}
+
+.footer:hover {
+    background-color: #333; /* Darken on hover */
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Section Titles Styling */
+.footer h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff6347;  /* Accent color for headings */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Horizontal line styling for each section */
+.footer-hr {
+    width: 50px;
+    border: 2px solid #ff6347;
+    margin: 0 auto 20px;
+}
+
+/* Spacing and layout for footer content */
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Flexbox for footer sections */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px; /* Add space below content */
+}
+
+.footer-section {
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+/* List styling for sections */
+.list-unstyled {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.list-unstyled li {
+    font-size: 16px;
+    padding: 8px 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.list-unstyled li:hover {
+    transform: translateX(10px); /* Subtle right shift on hover */
+    color: #ff6347;  /* Accent color on hover */
+}
+
+/* Social link styles */
+.social-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ff6347; /* Change color on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.social-link svg {
+    margin-right: 10px;
+}
+
+/* Bottom copyright section styling */
+.footer-bottom {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer h4 {
+        font-size: 20px;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        font-size: 16px;
+        color: #ccc;
+    }
+}
