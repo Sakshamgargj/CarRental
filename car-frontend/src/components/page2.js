@@ -7,7 +7,7 @@ import { connect } from 'react-redux'
 
 function Vehicle ({commonData}){
 
-    let [brand,setBrand] = useState([{vid:1,name:"Audi A1 S-Line",rent:45,model:"Audi",mark:"A1",year:2022,doors:"4",ac:"Yes",transmission:"Manual",fuel:"Hybrid",photo:"http://localhost:8080/file/1716175602857-any-name-audi.png"}])
+    let [brand,setBrand] = useState([{vid:1,name:"Audi A1 S-Line",rent:45,model:"Audi",mark:"A1",year:2022,doors:"4",ac:"Yes",transmission:"Manual",fuel:"Hybrid",photo:"http://res.cloudinary.com/dvyxj4egv/image/upload/v1733495304/sbsxitylxhqusm3w5n8g.jpg"}])
     let [change,setChange] = useState({})
  
     let nav = useNavigate();
