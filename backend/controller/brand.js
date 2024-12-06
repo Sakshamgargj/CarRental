@@ -23,7 +23,7 @@ const a2 = async (req,res)=>{
                 ac:"Yes",
                 transmission:"Manual",
                 fuel:"Hybrid",
-                photo:"http://localhost:8080/file/1716175602857-any-name-audi.png"
+                photo:"http://res.cloudinary.com/dvyxj4egv/image/upload/v1733495304/sbsxitylxhqusm3w5n8g.jpg"
             },
             {
                 vid:2,
@@ -36,7 +36,7 @@ const a2 = async (req,res)=>{
                 ac:"Yes",
                 transmission:"Manual",
                 fuel:"Diesel",
-                photo:"http://localhost:8080/file/1716206346052-any-name-vw2.png"
+                photo:"http://res.cloudinary.com/dvyxj4egv/image/upload/v1733495537/f3uwyis6bdqzjh8xeeds.jpg"
             },
             {
                 vid:3,
@@ -49,7 +49,7 @@ const a2 = async (req,res)=>{
                 ac:"Yes",
                 transmission:"Automatic",
                 fuel:"Hybrid",
-                photo:"http://localhost:8080/file/1716206588628-any-name-t1.png"
+                photo:"http://res.cloudinary.com/dvyxj4egv/image/upload/v1733495686/rcczdlun0cnrmv5o2oot.jpg"
             },{
                 vid:4,
                 name:"Mercedes-Benz GLK",
@@ -61,7 +61,7 @@ const a2 = async (req,res)=>{
                 ac:"Yes",
                 transmission:"Manual",
                 fuel:"Diesel",
-                photo:"http://localhost:8080/file/1716206198680-any-name-mercedes3.png"
+                photo:"http://res.cloudinary.com/dvyxj4egv/image/upload/v1733495441/clnsieijcqp28o01gd2d.jpg"
 
             },
             {
@@ -75,7 +75,7 @@ const a2 = async (req,res)=>{
                 ac:"Yes",
                 transmission:"Manual",
                 fuel:"Diesel",
-                photo:"http://localhost:8080/file/1716206451632-any-name-bmw2.png"
+                photo:"http://res.cloudinary.com/dvyxj4egv/image/upload/v1733495305/sa7pcrqdqq0609lcehdi.jpg"
             },
             {
                 vid:6,
@@ -88,7 +88,7 @@ const a2 = async (req,res)=>{
                 ac:"Yes",
                 transmission:"Automatic",
                 fuel:"Petrol",
-                photo:"http://localhost:8080/file/1716206511860-any-name-vw1.jpg"
+                photo:"http://res.cloudinary.com/dvyxj4egv/image/upload/v1733495442/k6mmku2ixutyswt3gr2g.jpg"
             }
         ]
         const vehicleData = await Vehicle.create(vehicle);
